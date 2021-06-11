@@ -9,17 +9,51 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* ///////////// */
+/* Circle Styles */
+/* ///////////// */
+.circle-top {
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-43%, -50%);
+}
+
+.circle-bottom {
+    position: absolute;
+    transform: translate(43%, 50%);
+}
+
+@media (min-width: 700px) {
+    .circle-bottom {
+        /* position: absolute; */
+        transform: translate(43%, 50%);
+    }
+}
+
+
+/* /////////// */
+/* Card Styles */
+/* /////////// */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 h1, h2, p {
