@@ -1,8 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+h1, h2 {
+    font-size: 1.125rem;
+    color: var(--desaturated-blue);
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+.card {
+    width: 86%;
+    max-width: 20.625rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    position: relative;
+}
+
+.card-pattern {
+    background-image: url("./images/bg-pattern-card.svg");
+    width: 100%;
+    height: 8.8rem;
+    background-size: cover;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+}
+
+.profile-image {
+    background-image: url("./images/image-victor.jpg");
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5.5rem;
+    border-radius: 50%;
+    border: 0.313rem solid #fff;
+}
+
+.info {
+    padding-top: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.age {
+    font-size: 1.1rem;
+}
+
+.city {
+    text-align: center;
+    padding-top: 0.65rem;
+    padding-bottom: 1.7rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.stats {
+    width: 85%;
+    margin: 1.8rem auto 1.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat p {
+    font-size: 0.6rem;
+    letter-spacing: 0.12rem;
+    padding-top: 0.45rem;
+}
+
 .attribution { 
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 0.75rem; 
+    text-align: center;
+    padding-top: 1rem;
+    width: 90%;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 600px) {
+    .attribution {
+        font-size: 0.9rem;
+    }
 }
