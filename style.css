@@ -9,42 +9,13 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
-
-/* ///////////// */
-/* Circle Styles */
-/* ///////////// */
-.circle-top {
-    width: 100vh;
-    height: 100vh;
-    position: absolute;
-    transform: translate(-43%, -50%);
 }
 
-.circle-bottom {
-    position: absolute;
-    transform: translate(43%, 50%);
-}
-
-@media (min-width: 700px) {
-    .circle-bottom {
-        /* position: absolute; */
-        transform: translate(43%, 50%);
-    }
-}
-
-
-/* /////////// */
-/* Card Styles */
-/* /////////// */
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
     overflow: hidden;
@@ -53,7 +24,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 48vw bottom 42vh, left 48vw top 42vh;
+    background-attachment: fixed;
 }
 
 h1, h2, p {
@@ -71,7 +46,7 @@ p {
 
 .card {
     width: 86%;
-    max-width: 20.625rem;
+    max-width: 20.156rem;
     background-color: #fff;
     border-radius: 0.8rem;
     position: relative;
