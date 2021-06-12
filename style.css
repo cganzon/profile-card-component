@@ -63,6 +63,8 @@ p {
 
 .profile-image {
     background-image: url("./images/image-victor.jpg");
+    background-position: center;
+    background-color: #fff;
     width: 6rem;
     height: 6rem;
     position: absolute;
